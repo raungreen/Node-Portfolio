@@ -12,6 +12,6 @@ app.set('views', path.join(__dirname, '../client/src/views'));
 
 app.use(webRoutes);
 
-app.listen(port, () => {
+app.listen(process.env.Port || ${port}, () => {
   console.log(`Server is running on http://www.localhost:${port}`);
 });
