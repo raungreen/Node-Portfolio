@@ -17,6 +17,8 @@ Blog
 */
 @import 'blog/index';
 @import 'blog/show';
+@import 'blog/create';
+
 * {
   font-family: $mainFont;
   box-sizing: border-box;

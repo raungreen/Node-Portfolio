@@ -26,7 +26,9 @@ router.delete('/projects/:title', projectsController.destroy);
 Blog
 ===========================================================================================*/
 router.get('/blog', blogController.index);
-router.get('/blog/:title', blogController.show);
+router.get('/blog/create', blogController.create);
+router.get('/blog/:slug', blogController.show);
+router.post('/blog', blogController.store);
 
 /*===========================================================================================
 Admin
