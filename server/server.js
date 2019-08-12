@@ -7,6 +7,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
+const methodOverride = require('method-override');
 const dotenv = require('dotenv');
 
 dotenv.config();
@@ -24,6 +25,7 @@ app.use(
     extended: false
   })
 );
+app.use(methodOverride('_method'));
 app.use(bodyParser.json());
 app.use(logger('dev'));
 

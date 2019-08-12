@@ -13,7 +13,11 @@ block content
                   img(src='/img/city_skyline.jpeg')
               div(class="col-md-12")
                
+                h2= post.category
                 p= post.description
+                div
+                button
+                  a(href="/blog/" + post.slug + "/delete") DELETE
               
         div(class="col-md-4")
           div(class="content-box")

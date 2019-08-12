@@ -7,11 +7,14 @@ block content
     div(class="content-box")
       div(class="row")
         div(class="col-md-8")
-          h1 Blogs
+          h1 Create a Post
           form(method="POST", action="/blog")
             div
               label(for="title") title
               input(type="text", name="title")
+            div
+              label(for="category") Category
+              input(type="text", name="category")
             div
               label(for="description") description
               textarea(name="description")

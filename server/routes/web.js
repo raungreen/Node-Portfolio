@@ -29,6 +29,9 @@ router.get('/blog', blogController.index);
 router.get('/blog/create', blogController.create);
 router.get('/blog/:slug', blogController.show);
 router.post('/blog', blogController.store);
+router.get('/blog/:slug/edit', blogController.edit);
+router.put('/blog/:slug', blogController.update);
+router.get('/blog/:slug/delete', blogController.destroy);
 
 /*===========================================================================================
 Admin
